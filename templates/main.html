@@ -1,0 +1,5 @@
+{% import './macro.html' as macro -%}
+
+{% set variableForMacro = 'direct value, passed to macro' -%}
+
+{{ macro.testMacro(variableForMacro) }}, but should be "{{ variableForMacro }}"!
